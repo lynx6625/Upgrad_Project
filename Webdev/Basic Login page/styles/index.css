@@ -1,0 +1,35 @@
+#orsign{
+    color: rgb(57, 149, 255);
+}
+#login{
+    display: block;
+}
+.id{
+    font-weight: bold;
+}
+label,input{
+    display: block;
+}
+h1,h5{
+    display: inline;
+}
+h5{
+    padding: 10px;
+}
+button{
+
+    background: green;
+    color: white;
+    width: 100%;
+}
+
+body{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: sans-serif; 
+    line-height: 1.5; 
+    min-height: 100vh; 
+    flex-direction: column; 
+    margin: 0;
+}
