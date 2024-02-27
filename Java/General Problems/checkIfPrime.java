@@ -1,6 +1,6 @@
-public class isPrime {
+public class checkIfPrime {
 
-  static void isPrime(int n) {
+  static void checkPrime(int n) {
     if (n < 2) {
       System.out.println("There are no prime numbers less than " + n);
       return;
@@ -30,6 +30,6 @@ public class isPrime {
   }
 
   public static void main(String args[]) {
-    isPrime(-5);
+    checkPrime(-5);
   }
 }
