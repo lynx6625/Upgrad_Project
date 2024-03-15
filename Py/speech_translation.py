@@ -4,6 +4,7 @@ import azure.cognitiveservices.speech as speechsdk
 def recognize_from_microphone():
     # This example requires environment variables named "SPEECH_KEY" and "SPEECH_REGION"
     speech_translation_config = speechsdk.translation.SpeechTranslationConfig(subscription="e2a2a8b474024d58a1deb419c9f637a2", region="eastus")
+    speech_translation_config.endpoint_id = "e1531fd6-d528-4bba-bc15-1299589e3724"
     speech_translation_config.speech_recognition_language="hi-IN"
 
     target_language="kn"
@@ -20,6 +21,8 @@ def recognize_from_microphone():
         print("""Translated into '{}': {}""".format(
             target_language, 
             translation_recognition_result.translations[target_language]))
+        with open("translated_text.txt", "w", encoding="utf-8") as text_file:
+            text_file.write(translation_recognition_result.translations[target_language])
     elif translation_recognition_result.reason == speechsdk.ResultReason.NoMatch:
         print("No speech could be recognized: {}".format(translation_recognition_result.no_match_details))
     elif translation_recognition_result.reason == speechsdk.ResultReason.Canceled:
