@@ -66,22 +66,13 @@ var commentBtn = document.getElementById('commentbutton');
 var commentBox = document.getElementById('commentBox');
 var commentSection = document.getElementById('allcomments');
 
-// Add an event listener for the click event on the button
 commentBtn.addEventListener('click', function() {
-    // Get the value of the comment box
     var commentText = commentBox.value.trim();
-    // Check if the comment box is not empty
     if(commentText) {
-        // Create a new div element to hold the comment
         var newComment = document.createElement('div');
-        // Set the text of the new div to the comment text
         newComment.textContent = commentText;
-        // Append the new div to the comment section
+        newComment.className = 'comment';
         commentSection.appendChild(newComment);
-        // Clear the comment box
         commentBox.value = '';
     }
 });
-
-
-

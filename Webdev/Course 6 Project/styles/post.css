@@ -122,3 +122,20 @@ h2{
   align-items: center;
   justify-content: center;
  }
+/* Correct the container class to match your JavaScript code */
+.allcomments {
+  display: none;
+  width: 40%;
+  background-color: grey;
+  padding: 10px; /* this will create some space inside the grey container */
+  margin-top: 20px;
+}
+
+.comment {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
