@@ -47,3 +47,24 @@ function closeModal() {
 // Attach event listeners to the modal buttons
 yesBtn.addEventListener('click', handleDelete);
 noBtn.addEventListener('click', closeModal);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const ellipsisButtons = document.querySelectorAll('.el');
+
+    ellipsisButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            // Assuming the structure is consistent and post elements are as described
+            const postDiv = this.closest('.postdiv');
+            const poster = postDiv.querySelector('.poster p').innerText;
+            const postTitle = postDiv.querySelector('.posttitle p').innerText;
+            const postContent = postDiv.querySelector('.postbody > p').innerText;
+
+            localStorage.setItem('poster', poster);
+            localStorage.setItem('postTitle', postTitle);
+            localStorage.setItem('postContent', postContent);
+
+            window.location.href = '../html/post.html'; 
+        });
+    });
+});

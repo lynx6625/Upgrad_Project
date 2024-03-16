@@ -100,6 +100,7 @@ body {
 .modalform {
   display: flex;
   flex-direction: column;
+
 }
 
 .modalform label {
@@ -183,4 +184,8 @@ body {
 #cpModal .modal-content {
   width: 80%; /* or any other value */
   max-width: 800px; /* or any other value */
+}
+
+.modal-content p{
+  text-align: center;
 }

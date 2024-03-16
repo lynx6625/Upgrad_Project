@@ -67,6 +67,7 @@ var commentBox = document.getElementById('commentBox');
 var commentSection = document.getElementById('allcomments');
 
 commentBtn.addEventListener('click', function() {
+    commentSection.style.display = "block";
     var commentText = commentBox.value.trim();
     if(commentText) {
         var newComment = document.createElement('div');
@@ -75,4 +76,16 @@ commentBtn.addEventListener('click', function() {
         commentSection.appendChild(newComment);
         commentBox.value = '';
     }
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    const poster = localStorage.getItem('poster');
+    const postTitle = localStorage.getItem('postTitle');
+    const postContent = localStorage.getItem('postContent');
+    document.getElementById('edit1').innerText = postTitle;
+    document.getElementById('edit2').innerText = poster;
+    document.getElementById('edit3').innerText = postContent;
 });
