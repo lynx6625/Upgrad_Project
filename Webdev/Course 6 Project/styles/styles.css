@@ -14,7 +14,7 @@
   margin-left: 10px;
   padding: 5px;
   width: 100px;
-  height: 40px;
+  height: 35px;
   text-align: center;
 }
 
@@ -79,9 +79,9 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
 }
+
 
 .modal-content {
   position: relative;
@@ -94,6 +94,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 .modalform {
   display: flex;
   flex-direction: column;
@@ -103,22 +104,34 @@ body {
   margin-top: 5px;
 }
 
-.modalform input[type="text"] {
+.modalform input[type="text"],
+.modalform input[type="password"],
+.modalform input[type="email"]
+.modalform textarea { 
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  background-color: rgb(200, 199, 199);
+  color: black;
+  resize: vertical;
 }
 
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  line-height: 1.5em;
+.modalform textarea {
+  height: 150px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: auto;
+  background-color: rgb(209, 209, 209);
+  border: none;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.modalform button{
+
+.modalform button {
   padding: 10px;
   background-color: green;
   color: white;
@@ -128,22 +141,44 @@ body {
   cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
+
+.close, .close2, .close3 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  line-height: 1.5em;
   cursor: pointer;
 }
 
-.modal-content hr{
+
+
+.close:hover,.close:focus, .close2:hover, .close2:focus, .close3:hover, .close3:focus
+{
+  color: black;
+  text-decoration: none;
+}
+
+/* Headings within modal */
+.modal-content h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(54, 53, 53);
+}
+
+
+.modal-content hr {
   background-color: rgb(209, 209, 209);
   height: 1px;
   border: none;
 }
 
-.modal-content h2{
-  font-family: "Ubuntu Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-  color:rgb(54, 53, 53);
+#post{
+  height: 150px;
+}
+
+#cpModal .modal-content {
+  width: 80%; /* or any other value */
+  max-width: 800px; /* or any other value */
 }
