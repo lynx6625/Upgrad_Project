@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -33,21 +33,19 @@
 <div id="myModal" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
-      <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <span class="close"><i class="fas fa-times"></i></span>
 
+<h2>Get started</h2>
+<hr>
       <form class="modalform">
-    <label for="name">Name</label><br>
-  <input type="text" id="name" name="name" placeholder="Enter your name"><br>
-
+  <label for="name">Name</label><br>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required="" oninvalid="this.setCustomValidity('Please fill out this field.')" oninput="setCustomValidity('')"><br>
   <label for="uname">Username</label><br>
-  <input type="text" id="uname" name="uname" placeholder="Enter your username">
-
+  <input type="text" id="uname" name="uname" placeholder="Enter your username" required="" oninvalid="this.setCustomValidity('Please fill out this field.')" oninput="setCustomValidity('')"><br>
   <label for="pw">Password</label><br>
-  <input type="text" id="pw" name="pw" placeholder="Enter your password">
-
+  <input type="text" id="pw" name="pw" placeholder="Enter your password" required="" oninvalid="this.setCustomValidity('Please fill out this field.')" oninput="setCustomValidity('')"><br>
   <label for="cpw">Confirm Password</label><br>
-  <input type="text" id="cpw" name="cpw" placeholder="Re-Enter your password">
-
+  <input type="text" id="cpw" name="cpw" placeholder="Re-Enter your password" required="" oninvalid="this.setCustomValidity('Please fill out this field.')" oninput="setCustomValidity('')"><br>
   <button type="submit">Sign Up</button>
       </form>
     </div>
