@@ -1,28 +1,28 @@
 .title {
-    font-family: "Montez", cursive;
-    font-weight: 400;
-    font-style: normal;
-    color: blue;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .signup,
-  .signin {
-    background-color: blue;
-    color: white;
-    margin-left: 10px;
-    padding: 5px;
-    width: 100px;
-    height: 35px;
-    text-align: center;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+  font-family: "Montez", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: blue;
+  margin: 0;
+  padding: 0;
+}
+
+.signup,
+.signin {
+  background-color: blue;
+  color: white;
+  margin-left: 10px;
+  padding: 5px;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .subheading {
@@ -33,7 +33,6 @@
   padding: 0;
 }
 
-
 body {
   background-color: #ffeedd;
 }
@@ -42,20 +41,20 @@ body {
   padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px ;
-  justify-content: center; 
+  gap: 20px;
+  justify-content: center;
 }
 
 .postdiv {
-  display: flex; 
+  display: flex;
   border: 1px solid #ccc;
   border-radius: 5px;
   flex: 0 0 calc(50% - 20px);
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.postdiv:hover{
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.postdiv:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .poster {
@@ -84,21 +83,21 @@ body {
 
 .posttitle p {
   margin: 0;
-  font-size: 1.2em; /* Adjust size as needed */
+  font-size: 1.2em;
 }
 
-.trash{
+.trash {
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-.el{
+.el {
   position: absolute;
   bottom: 10px;
   right: 10px;
 }
-.postbody{
+.postbody {
   background-color: rgb(233, 231, 231);
   padding: 20px;
   position: relative;
@@ -113,7 +112,6 @@ body {
 .postbody span {
   display: block;
   text-align: right;
-  /* Placeholder for Font Awesome icon */
 }
 
 .deleteModal {
@@ -125,9 +123,8 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
-
 
 .deleteModal-content {
   position: relative;
@@ -138,17 +135,16 @@ body {
   margin: auto;
   background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center; 
-
+  text-align: center;
 }
 
 .deleteModal-buttons {
   display: flex;
   justify-content: center;
-  gap: 40%; 
+  gap: 40%;
 }
 
-#delyes{
+#delyes {
   background-color: green;
   color: white;
   width: calc(50% - 10px);
@@ -158,7 +154,7 @@ body {
   flex: none;
 }
 
-#delno{
+#delno {
   background-color: red;
   color: white;
   width: calc(50% - 10px);

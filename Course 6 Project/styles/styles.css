@@ -18,15 +18,15 @@
   text-align: center;
 }
 
-.auth-buttons{
-    display: flex;
+.auth-buttons {
+  display: flex;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .subheading {
@@ -40,18 +40,19 @@
 body {
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   background-size: 100% 100%;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
-.topleft{
-    display: flex;
-    flex-direction: column;
+.topleft {
+  display: flex;
+  flex-direction: column;
 }
 
-.allp, .cp{
+.allp,
+.cp {
   background-color: yellow;
   width: 100px;
   height: 40px;
@@ -59,7 +60,7 @@ body {
   text-align: center;
 }
 
-.postb{
+.postb {
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -77,13 +78,11 @@ body {
   left: 50%;
   top: 50%;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   transform: translate(-50%, -50%);
 }
-
-
 
 .modal-content {
   position: relative;
@@ -96,11 +95,9 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 .modalform {
   display: flex;
   flex-direction: column;
-
 }
 
 .modalform label {
@@ -109,8 +106,7 @@ body {
 
 .modalform input[type="text"],
 .modalform input[type="password"],
-.modalform input[type="email"]
-.modalform textarea { 
+.modalform input[type="email"] .modalform textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -133,7 +129,6 @@ body {
   font-style: normal;
 }
 
-
 .modalform button {
   padding: 10px;
   background-color: green;
@@ -144,8 +139,9 @@ body {
   cursor: pointer;
 }
 
-
-.close, .close2, .close3 {
+.close,
+.close2,
+.close3 {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -154,15 +150,16 @@ body {
   cursor: pointer;
 }
 
-
-
-.close:hover,.close:focus, .close2:hover, .close2:focus, .close3:hover, .close3:focus
-{
+.close:hover,
+.close:focus,
+.close2:hover,
+.close2:focus,
+.close3:hover,
+.close3:focus {
   color: black;
   text-decoration: none;
 }
 
-/* Headings within modal */
 .modal-content h2 {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
@@ -170,22 +167,21 @@ body {
   color: rgb(54, 53, 53);
 }
 
-
 .modal-content hr {
   background-color: rgb(209, 209, 209);
   height: 1px;
   border: none;
 }
 
-#post{
+#post {
   height: 150px;
 }
 
 #cpModal .modal-content {
-  width: 80%; /* or any other value */
-  max-width: 800px; /* or any other value */
+  width: 80%;
+  max-width: 800px;
 }
 
-.modal-content p{
+.modal-content p {
   text-align: center;
 }

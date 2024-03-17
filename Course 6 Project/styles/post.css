@@ -1,91 +1,64 @@
 .title {
-    font-family: "Montez", cursive;
-    font-weight: 400;
-    font-style: normal;
-    color: blue;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .signup,
-  .signin {
-    background-color: blue;
-    color: white;
-    margin-left: 10px;
-    padding: 5px;
-    width: 100px;
-    height: 35px;
-    text-align: center;
-  }
-  
-  .auth-buttons{
-      display: flex;
-  }
-  
-  .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-  }
-  
-  .subheading {
-    font-family: "Ubuntu Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-  }
-h2{
-    font-family: "Ubuntu Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
+  font-family: "Montez", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: blue;
+  margin: 0;
+  padding: 0;
 }
-h3{
-    font-family: "Ubuntu Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-    margin:0;
+
+.signup,
+.signin {
+  background-color: blue;
+  color: white;
+  margin-left: 10px;
+  padding: 5px;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+}
+
+.auth-buttons {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.subheading {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+h3 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
 }
 
 .edit {
-    background-color: red;
-    box-shadow: 0 8px 16px 0 rgba(255, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 0, 0, 0.19);
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    margin:0;
-    border-radius: 5px;
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .edit .fa { 
-    margin-left: 8px;
-  }
-  
-.likebutton{
   background-color: red;
-  box-shadow: 0 8px 16px 0 rgba(255, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 0, 0, 0.19);
+  box-shadow: 0 8px 16px 0 rgba(255, 0, 0, 0.2),
+    0 6px 20px 0 rgba(255, 0, 0, 0.19);
   color: white;
   border: none;
   padding: 8px 16px;
-  margin:0;
+  margin: 0;
   border-radius: 5px;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   text-align: center;
   vertical-align: middle;
@@ -94,10 +67,39 @@ h3{
   align-items: center;
   justify-content: center;
 }
- .likebutton .fa{
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit .fa {
   margin-left: 8px;
- }
- .commentsec textarea { 
+}
+
+.likebutton {
+  background-color: red;
+  box-shadow: 0 8px 16px 0 rgba(255, 0, 0, 0.2),
+    0 6px 20px 0 rgba(255, 0, 0, 0.19);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0;
+  border-radius: 5px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.likebutton .fa {
+  margin-left: 8px;
+}
+.commentsec textarea {
   width: 40%;
   height: 100px;
   padding: 10px;
@@ -108,15 +110,16 @@ h3{
   resize: vertical;
 }
 
- .commentbutton{
+.commentbutton {
   background-color: red;
-  box-shadow: 0 8px 16px 0 rgba(255, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 0, 0, 0.19);
+  box-shadow: 0 8px 16px 0 rgba(255, 0, 0, 0.2),
+    0 6px 20px 0 rgba(255, 0, 0, 0.19);
   color: white;
   border: none;
   padding: 8px 16px;
-  margin:0;
+  margin: 0;
   border-radius: 5px;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   text-align: center;
   vertical-align: middle;
@@ -124,7 +127,7 @@ h3{
   display: inline-flex;
   align-items: center;
   justify-content: center;
- }
+}
 
 .allcomments {
   display: none;
