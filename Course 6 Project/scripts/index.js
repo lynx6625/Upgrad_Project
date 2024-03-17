@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var switchToSignupLinks = document.querySelectorAll(".switch-to-signup");
   switchToSignupLinks.forEach(function (link) {
     link.onclick = function () {
-      closeSignin();
+      closecp();
       openSignup();
       return false;
     };
